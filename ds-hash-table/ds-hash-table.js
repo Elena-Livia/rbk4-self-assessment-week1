@@ -13,8 +13,10 @@ var makeHashTable = function() {
         this._storage[hashFn(key, max)] = index;
 
         var bucket = this._storage[index];
+
  //check if there is a bucket at this index       
         if(!bucket) {
+          
 //if there is not, create it
           var bucket = [];
 
